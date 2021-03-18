@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Player</title>
+    <!-- Connect to online cdn bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- link external css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- link mainjs -->
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Posters/favicon.jpeg" type="image/x-icon" />
+
+    <!-- carousel links -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <!-- connect sdk -->
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+</head>
+
+<body>
+
+    <!-- statrt nav bar -->
+    <div class="container-fluid mb-3 pt-3 pb-3" style="background-color:white;">
+        <div class="row">
+            <!-- social media icons -->
+            <div class="col-1 mt-2" style="border-right:solid black;">
+                
+                <a href="https://github.com/nirmalaratnamnirushan" target="blank" style="color: black;"><i class="fa fa-github mr-2" aria-hidden="true"></i></a>
+                
+              
+            </div>
+    
+            <div class="col-6" id="music" style="text-align: left;">
+                <a href="./index.html" class="btn btn1 active"
+                    style="color: black; text-decoration: none; margin-right: 10px;">Tamil
+                    Songs</a>
+
+            
+            <div class="col-4" style="text-align: left;">
+                <nav class=" navbar-light">
+                    <form class="form-inline">
+                        
+                    </form>
+                </nav>
+
+
+            </div>
+            
+        
+    </div>
+
+
+    
+    <!-- Card start -->
+    <!-- 1st card -->
+    <div class="container bg-light mt-0 mb-3" style="margin-bottom: 200px;">
+        <div class="row">
+
+            <!-- Firts Image -->
+            <div class="col-3 mt-2 itembox" style="margin-bottom: 200px;">
+                <div class="card itembox  text-center">
+                    <div class="card-block">
+                        <img class=" mt-3" id="image1" style="height: 270px; width: 220px;"
+                            src="./images/maxresdefault.jpg">
+
+                        <div class="card-title">
+
+                            <h5 class="text-center">Master songs</h5>
+
+                            <button class="btn btn-outline-primary " id="sta1"> <i class="fas fa-play-circle">Play</i></button>
+                            <button class="btn btn-outline-danger " id="sto1"> <i class="fas fa-pause-circle">Pause</i></button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Image -->
+            <div class="col-3 mt-2 itembox Action A">
+                <div class="card  text-center">
+                    <div class="card-block">
+                        <img class="mt-3" style="height: 270px; width: 220px;" src="./images/maara-review-banner.jpg">
+                        <div class="card-title">
+                            <h5 class="text-center">Mara song</h2>
+                                <button class="btn btn-outline-primary" id="start1"> <i class="fas fa-play-circle">Play</i></button>
+                                <button class="btn btn-outline-danger " id="stop1"> <i class="fas fa-pause-circle">Pause</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Image -->
+            <div class="col-3 mt-2 itembox Action A">
+                <div class="card  text-center">
+                    <div class="card-block">
+                        <img class="mt-3" style="height: 270px; width: 220px;" src="./images/maxresdefault (1).jpg">
+                        <div class="card-title">
+                            <h5 class="text-center">96 Song</h2>
+                                <button class="btn btn-outline-primary" id="start2"> <i class="fas fa-play-circle">Play</i></button>
+                                <button class="btn btn-outline-danger" id="stop2"> <i class="fas fa-pause-circle">Pause</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Image -->
+            <div class="col-3 mt-2 itembox Action A">
+                <div class="card  text-center">
+                    <div class="card-block">
+                        <img class="mt-3" style="height: 270px; width: 220px;" src="./images/811Go7JhVHL._RI_.jpg">
+                        <div class="card-title">
+                            <h5 class="text-center">KGF song</h2>
+                                <button class="btn btn-outline-primary" id="start3"> <i class="fas fa-play-circle">Play</i></button>
+                                <button class="btn btn-outline-danger" id="stop3"> <i class="fas fa-pause-circle">Pause</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd row -->
+
+        </div>
+        <footer id="footer">
+            
+            <p>All Rights Reserved @ <a href="https://github.com/nirmalaratnamnirushan">Nirushan</a></p>
+        </footer>
+
+     
+
+        <!-- connect javascript -->
+        <script src="./jquery-3.3.1.js"></script>
+        <script src="./jquery-3.3.1.min.js"></script>
+        <script src="./main.js"></script>
+
+
+</body>
+
+</html>
